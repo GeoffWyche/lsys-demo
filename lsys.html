@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    </style>
+    <title>LSystems/JavaScript/HTML5-Canvas</title>
+    <script src="lsys.js"></script>
+  </head>
+  <body onload="app()">
+    <div>
+      <h1>LSystems demo</h1>
+      <form id="controls">Segment Length:
+	<input id="segLengthControl" type="range" name="sl" min="10" max="200" value="8" oninput='handleSegLengthControlChange()'>
+	Angle:
+	<input id="angleControl" type="range" name="angle" min="-1570" max="1570" value="400" oninput='handleAngleControlChange()'>
+      </form>
+    </div>
+    <canvas id="gcanvas" width="200" height="200" style="border:1px solid #000000">
+    </canvas>
+    <div onload="app()"></div>
+  </body>
+</html>
